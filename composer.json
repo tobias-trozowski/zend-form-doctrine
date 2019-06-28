@@ -1,0 +1,54 @@
+{
+    "name": "tobias/zend-form-doctrine",
+    "description": "Use Zend\\Form\\Element with Doctrine objects",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "doctrine",
+        "zend",
+        "zendframework",
+        "form",
+        "element"
+    ],
+    "authors": [
+        {
+            "name": "Tobias Trozowski",
+            "email": "tobias@trozowski.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "doctrine/collections": "^1.6",
+        "doctrine/persistence": "^1.0",
+        "doctrine/inflector": "^1.2",
+        "zendframework/zend-form": "^2.14"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "squizlabs/php_codesniffer": "^3.4",
+        "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobias\\Zend\\Form\\Doctrine\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TobiasTest\\Zend\\Form\\Doctrine\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --coverage-clover clover.xml"
+    }
+}

@@ -1,0 +1,16 @@
+<phpunit
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+        backupGlobals="false"
+>
+    <testsuites>
+        <testsuite name="Doctrine Form Test Suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
