@@ -1,4 +1,4 @@
-# Zend Hydrator Doctrine
+# Zend Form Doctrine
 
 [![Build Status](https://travis-ci.com/tobias-trozowski/zend-form-doctrine.svg)](https://travis-ci.com/tobias-trozowski/zend-form-doctrine)
 
